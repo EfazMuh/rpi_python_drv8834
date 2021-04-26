@@ -12,13 +12,16 @@ from rpi_python_drv8834.stepper import StepperMotor
 ###### 2. create object
 
 ```
-motor = StepperMotor(enable_pin, step_pin, dir_pin, mode_pins, step_type, fullstep_delay)
+motor = StepperMotor(step_pin, dir_pin, mode_pins, step_type)
 ```
 
 ###### 3. run motor
+
 ```
-motor.enable(True)        # enables stepper driver
 motor.run(6400, True)     # run motor 6400 steps clowckwise
 motor.run(6400, False)    # run motor 6400 steps counterclockwise
-motor.enable(False)       # disable stepper driver
 ```
+
+###### 4. note
+
+To use microstep modes of 1/4 or 1/32, M0 must be left floating by disconnecting it from the GPIO pin.
