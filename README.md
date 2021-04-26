@@ -1,18 +1,12 @@
-# Raspberry Pi DRV8825 Python library 
-Python Library to controll a stepper motor with a DRV8825 driver connected to a Raspberry Pi
-
-### install
-```
-$ pip install rpi_python_rdv8825
-```
-or clone repository
+# Raspberry Pi DRV8834 Python library 
+Python Library to control a stepper motor with a DRV8834 driver connected to a Raspberry Pi
 
 ### How to use
 
 ###### 1. import library
 
 ```
-from rpi_python_drv8825.stepper import StepperMotor
+from rpi_python_drv8834.stepper import StepperMotor
 ```
 
 ###### 2. create object
